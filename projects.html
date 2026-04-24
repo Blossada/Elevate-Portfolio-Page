@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Chiboroma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep-blue: #0C1E3C;
+      --ivory: #F8F8F8;
+      --gold: #B9A87A;
+      --silver: #D9D9D9;
+      --pale-sky: #A8C0E0;
+    }
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--deep-blue), #1a2a50);
+      color: var(--ivory);
+    }
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    nav a {
+      color: var(--ivory);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: var(--gold);
+    }
+    .projects-section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .projects-section h2 {
+      font-size: 2.5rem;
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 2rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--pale-sky);
+    }
+    .project-desc {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      color: var(--silver);
+    }
+    .project-tools {
+      font-size: 0.85rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .project-links a {
+      text-decoration: none;
+      margin-right: 1rem;
+      font-size: 0.9rem;
+      color: var(--ivory);
+      border: 1px solid var(--ivory);
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .project-links a:hover {
+      background: var(--gold);
+      color: var(--deep-blue);
+      border-color: var(--gold);
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">C.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-title">School Website Project</div>
+        <div class="project-desc">I made a school website with multiple webpage links including About, Admissions, Contact and so on.</div>
+        <div class="project-tools">HTML, CSS, JavaScript</div>
+        <div class="project-links">
+          <a href="./School_Project/home.html" target="_blank">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Login & SignUp Project</div>
+        <div class="project-desc">I made a login and signup form for both new and existing users.</div>
+        <div class="project-tools">HTML, CSS, PHP</div>
+        <div class="project-links">
+          <a href="./Login Page/index.html" target="_blank">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">E-commerce Website Project</div>
+        <div class="project-desc">I made an e-commerce website with home, about and catalog page</div>
+        <div class="project-tools">HTML, CSS, JavaScript, PHP</div>
+        <div class="project-links">
+          <a href="./E-commerce/index.html" target="_blank">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Credit Card Checkout Page</div>
+        <div class="project-desc">I made a credit card checkout page for e-commerce websites.</div>
+        <div class="project-tools">HTML, CSS, JavaScript, Python</div>
+        <div class="project-links">
+          <a href="#">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">Greenery & Environmental Awareness Project</div>
+        <div class="project-desc">I made an environmental awareness website for various topics</div>
+        <div class="project-tools">HTML, CSS, JavaScript</div>
+        <div class="project-links">
+          <a href="bio/index.html" target="_blank">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-title">AI Study Helper</div>
+        <div class="project-desc">I made a study helper for students to learn better in both desktop</div>
+        <div class="project-tools">HTML, CSS, JavaScript, ReactJS</div>
+        <div class="project-links">
+          <a href="test.html" target="_blank">Live</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

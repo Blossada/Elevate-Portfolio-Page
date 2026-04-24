@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Chiboroma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep-blue: #0C1E3C;
+      --ivory: #F8F8F8;
+      --gold: #B9A87A;
+      --silver: #D9D9D9;
+      --pale-sky: #A8C0E0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--deep-blue), #1a2a50);
+      color: var(--ivory);
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    nav a {
+      color: var(--ivory);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--gold);
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: var(--pale-sky);
+      margin-bottom: 1rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    p {
+      color: var(--silver);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .service {
+      background: rgba(255,255,255,0.05);
+      padding: 2rem;
+      margin: 1rem auto;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">C.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>My Services</h2>
+    <p>I offer creative, fast, and functional solutions in web development, design, and productivity tools.</p>
+    <div class="service">
+      <h3>1. Full Website Design</h3>
+      <p>Responsive and elegant websites built with HTML, CSS, JavaScript, and optional backend integration.</p>
+    </div>
+    <div class="service">
+      <h3>2. UI/UX Design</h3>
+      <p>Clean and intuitive design for modern websites, landing pages, and web apps using Figma or code.</p>
+    </div>
+    <div class="service">
+      <h3>3. Notion Setup & Templates</h3>
+      <p>Custom dashboards, productivity planners, and Notion template designs for individuals and businesses.</p>
+    </div>
+  </section>
+</body>
+</html>

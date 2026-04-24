@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Chiboroma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep-blue: #0C1E3C;
+      --ivory: #F8F8F8;
+      --gold: #B9A87A;
+      --silver: #D9D9D9;
+      --pale-sky: #A8C0E0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--deep-blue), #1a2a50);
+      color: var(--ivory);
+      scroll-behavior: smooth;
+    }
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    nav a {
+      color: var(--ivory);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--gold);
+    }
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: var(--pale-sky);
+      margin-bottom: 1rem;
+    }
+    p {
+      color: var(--silver);
+      margin-bottom: 2rem;
+    }
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #888;
+    }
+    button {
+      background: var(--gold);
+      color: var(--deep-blue);
+      font-weight: bold;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #c8b788;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">C.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Let’s Connect</h2>
+    <p>Have a project or collaboration in mind? Send me a message.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</body>
+</html>

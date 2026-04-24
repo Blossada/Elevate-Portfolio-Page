@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chiboroma | Elevate Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.2rem; }
+      .cta-button { width: 100%; max-width: 280px; }
+      nav {display: block; width: 60px; gap: 20px;}
+    }
+    :root {
+      --deep-blue: #0C1E3C;
+      --ivory: #F8F8F8;
+      --gold: #B9A87A;
+      --silver: #D9D9D9;
+      --pale-sky: #A8C0E0;
+    }
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      color: var(--ivory);
+      background: linear-gradient(135deg, var(--deep-blue), #1a2a50);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+    nav a {
+      color: var(--ivory);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--gold);
+    }
+    .hero{
+      margin-left: 0;
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+      gap: 20px;
+      position: fixed;
+    }
+    
+    .hero1 {
+      padding: 4rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .hero1 h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: left;
+      color: var(--ivory);
+    }
+    .hero1 p {
+      margin-top: 1rem;
+      max-width: 600px;
+      text-align: left;
+      color: var(--silver);
+    } 
+
+    .skill-icon1{
+      font-size: 6rem;
+      opacity: 20%;
+      position: absolute;
+      left: 420px;
+    }
+    .skill-icon2{
+      font-size: 6rem;
+      opacity: 20%;
+      position: absolute;
+      top: 390px;
+      left: 10px;
+    }
+    .skill-icon3{
+      font-size: 6rem;
+      opacity: 30%;
+      position: absolute;
+      left: 780px;
+      top: 340px;
+    }
+    .ui{
+      margin: 0;
+      width: 90px;
+      height: 50px;
+      border-radius: 28% 28% 0 28%;
+      background: var(--pale-sky);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--deep-blue);
+      box-shadow: 0 0 15px rgba(10, 10, 58, 0.9);
+      position: relative;
+      bottom: 80px;
+      left: 174px;
+      border: 2px solid var(--deep-blue);
+    } 
+
+    .ai{
+      margin: 0;
+      width: 104px;
+      height: 55px;
+      border-radius: 0 32% 22% 32%;
+      background: var(--pale-sky);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--deep-blue);
+      box-shadow: 0 0 15px rgba(10,10,58,0.9);
+      position: relative;
+      top: 59px;
+      right: 38px;
+      border: 2px solid var(--deep-blue);
+    }
+    .data{
+      margin: 0;
+      width: 119px;
+      height: 65px;
+      border-radius: 28% 0 28% 28%;
+      background: var(--pale-sky);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: bold;
+      color: var(--deep-blue);
+      box-shadow: 0 0 15px rgba(10,10,58,0.9);
+      position: relative;
+      top: 116px;
+      left: 72px;
+      border: 2px solid var(--deep-blue);
+    }
+    
+    .avatar {
+      margin: 1rem 0;
+      width: 230px;
+      height: 210px;
+      border-radius: 50%;
+      background: var(--pale-sky);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 7rem;
+      font-weight: bold;
+      color: var(--deep-blue);
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    }
+    .cta-button {
+      margin-top: 2rem;
+      background: var(--gold);
+      color: var(--deep-blue);
+      padding: 0.75rem 1.5rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #c8b788;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">C.</div>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <div class="skill-icon1">🧠</div>
+  <div class="skill-icon2">📜</div>
+  <div class="skill-icon3">🚀</div>
+  <section class="hero">
+    <div class="ui">UI/UX</div>
+    <div class="data">Data <br> Analysis</div>
+    <div class="avatar">C</div>
+    <div class="ai">AI & ML</div>
+    <div class="hero1">
+      <h1>Elevate your web presence</h1>
+      <p>Hi, I’m Chiboroma — a passionate full-stack web developer, UI/UX designer, and Notion builder helping you craft clean, modern digital experiences.</p>
+      <a href="projects.html"><button class="cta-button">View My Work</button></a>
+    </div>
+  </section>
+</body>
+</html>

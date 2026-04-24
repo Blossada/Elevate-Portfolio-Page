@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Chiboroma</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --deep-blue: #0C1E3C;
+      --ivory: #F8F8F8;
+      --gold: #B9A87A;
+      --silver: #D9D9D9;
+      --pale-sky: #A8C0E0;
+    }
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--ivory);
+      background: linear-gradient(135deg, var(--deep-blue), #1a2a50);
+    }
+    header {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    nav a {
+      color: var(--ivory);
+      margin-left: 2rem;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: var(--gold);
+    }
+    .about-section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .about-section h2 {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+    .about-section p {
+      margin: 1rem 0;
+      line-height: 1.7;
+      color: var(--silver);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .skill {
+      background: rgba(255,255,255,0.05);
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .skill-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: var(--pale-sky);
+    }
+    .achievements {
+      margin-top: 3rem;
+    }
+    .achievement-item {
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+      border-left: 2px solid var(--gold);
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">C.</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>About Me</h2>
+    <p>I'm Chiboroma — a creative full-stack web developer and digital problem-solver. I build clean, intuitive websites and Notion systems with a focus on elegance, clarity, and ease of use. Whether I'm coding a feature, designing a UI, or building a workspace, I strive to elevate every detail.</p>
+
+    <p>Currently good at HTML, CSS, JavaScript, PHP, React and UI/UX principles (using Figma and Canva), I believe in building with purpose and beauty. I’m also passionate about Notion, where I craft tools that boost focus and productivity for creatives and coders.</p>
+
+    <p><strong>Values:</strong> Clarity, consistency, curiosity, and clean design.</p>
+
+    <div class="skills-grid">
+      <div class="skill">
+        <div class="skill-icon">💻</div>
+        <div>HTML, CSS and JavaScript</div>
+      </div>
+      <div class="skill">
+        <div class="skill-icon">🧠</div>
+        <div>Notion Workflows</div>
+      </div>
+      <div class="skill">
+        <div class="skill-icon">🎨</div>
+        <div>UI/UX Design</div>
+      </div>
+      <div class="skill">
+        <div class="skill-icon">⚙️</div>
+        <div>Problem Solving</div>
+      </div>
+    </div>
+
+    <div class="achievements">
+      <h3>Certifications & Highlights</h3><br>
+      <div class="achievement-item">📜 Completed 50+ hours of HTML/CSS foundational training</div>
+      <div class="achievement-item">🏆 Built a responsive credit card checkout form with animations and validation</div>
+      <div class="achievement-item">🚀 Created a Notion-based Pomodoro Planner with freelancing and coding logs</div>
+    </div>
+  </section>
+</body>
+</html>
